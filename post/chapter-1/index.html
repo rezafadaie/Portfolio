@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Data management and warehousing for the apartment blocks management | Reza Fadaie</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Defining a relational model to realize which tenant has not paid the rent">
+    <meta name="generator" content="Hugo 0.120.3">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="https://rezafadaie.github.io/Portfolio/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Data management and warehousing for the apartment blocks management" />
+<meta property="og:description" content="Defining a relational model to realize which tenant has not paid the rent" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://rezafadaie.github.io/Portfolio/post/chapter-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-04-01T10:58:08-04:00" />
+<meta property="article:modified_time" content="2020-04-01T10:58:08-04:00" />
+
+<meta itemprop="name" content="Data management and warehousing for the apartment blocks management">
+<meta itemprop="description" content="Defining a relational model to realize which tenant has not paid the rent"><meta itemprop="datePublished" content="2020-04-01T10:58:08-04:00" />
+<meta itemprop="dateModified" content="2020-04-01T10:58:08-04:00" />
+<meta itemprop="wordCount" content="667">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data management and warehousing for the apartment blocks management"/>
+<meta name="twitter:description" content="Defining a relational model to realize which tenant has not paid the rent"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  
+  <header class="cover bg-top" style="background-image: url('https://rezafadaie.github.io/Portfolio/images/images%20%289%29.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://rezafadaie.github.io/Portfolio/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Reza Fadaie
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rezafadaie.github.io/Portfolio/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rezafadaie.github.io/Portfolio/contact/" title="Contact page">
+              Contact
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://rezafadaie.github.io/Portfolio/post/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    
+    <a href="https://www.linkedin.com/in/reza-fadaie/" target="_blank" rel="noopener" class="LinkedIn ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://github.com/rezafadaie" target="_blank" rel="noopener" class="Github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Github link" aria-label="follow on Github——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Data management and warehousing for the apartment blocks management</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Defining a relational model to realize which tenant has not paid the rent
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Data management and warehousing for the apartment blocks management</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-04-01T10:58:08-04:00">April 1, 2020</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><ol>
+<li>Goal of the Project:</li>
+</ol>
+<p>The goal of this project is to design a comprehensive database system for the management of apartment blocks. The system aims to efficiently manage various aspects of apartment blocks, including apartments, owners, tenants, expenses, payments, and financial balances. The key objectives are as follows:</p>
+<ul>
+<li>
+<p>Data Organization: Create a structured database that accurately represents the real-world relationships and entities in apartment block management.</p>
+</li>
+<li>
+<p>Efficient Data Management: Streamline the management of apartment details, expenses, payments, and balances to ensure operational efficiency.</p>
+</li>
+<li>
+<p>Financial Tracking: Keep track of expenses, payments, and balances for each apartment, enabling the management of financial matters associated with apartment blocks.</p>
+</li>
+<li>
+<p>Tenant Registration: Facilitate the registration of tenants, with a charge of $50 per year per block, and maintain their information.</p>
+</li>
+<li>
+<p>Payment Recording: Record payments for rent and expenses (at a rate of $6 per year per apartment) to maintain up-to-date financial records.</p>
+</li>
+<li>
+<p>Centralized Credit Collection: Enable the administration, which manages multiple apartment blocks, to centralize credit collection management. This includes identifying individuals who have not paid their expenses.</p>
+</li>
+<li>
+<p>Classification of Owners and Tenants: Classify owners and tenants based on overdue amounts and overdue periods. This classification will help in efficiently managing credit collection and financial matters.</p>
+</li>
+</ul>
+<p>By achieving these objectives, the project aims to enhance the management of apartment blocks, improve financial transparency, and streamline credit collection processes for administrators overseeing multiple apartment blocks. The database will serve as a centralized hub for managing apartment-related data and financial transactions.</p>
+<ol start="2">
+<li>Relational Schema</li>
+</ol>
+<p>The relational schema evolved from the ER Diagram simplifies the structure by removing the generalization of &ldquo;Owner&rdquo; and &ldquo;Tenant&rdquo; into &ldquo;Person&rdquo; and instead maintains separate tables for owners and tenants. This separation enhances categorization and report generation.</p>
+<p>Incorporating tenancy details within the &ldquo;Tenant&rdquo; table, including lease start and end dates, facilitates contract management and expense cross-checking.</p>
+<p>Ownership information is linked to the &ldquo;Apartment&rdquo; table via a foreign key constraint, allowing individuals to own multiple apartments.</p>
+<p>A three-level property hierarchy is defined with progressive primary keys for &ldquo;Block,&rdquo; &ldquo;Building,&rdquo; and &ldquo;Apartment&rdquo; tables. This aids in real-world identification.</p>
+<p>Cash operations related to apartments are stored in the &ldquo;Payment&rdquo; table, while expenses are tracked in the &ldquo;Expenses&rdquo; table. Overdues and debt collection are managed through these tables.</p>
+<p>Foreign key constraints ensure referential integrity for &ldquo;Block,&rdquo; &ldquo;Building,&rdquo; and &ldquo;Apartment&rdquo; relations.</p>
+<p>Payments and expenses are linked to individual apartments. Shared expenses are calculated based on building and apartment shares.</p>
+<p>The database records cash movements for the current fiscal year. Overdues consist of the sum of current balances and unsettled amounts from previous fiscal years, stored in the &ldquo;Pre-Balance&rdquo; table for invoicing.</p>
+<p>Main operations involve tenant registration (50 per year per block) and recording rent and expense payments (6 per year per apartment). With an assumed 10 blocks, approximately 50,000 rent operations and 120,000 payment of expenses operations are expected on average.</p>
+<p>Overall, this schema streamlines data management and financial tracking for efficient apartment block administration.</p>
+<figure><img src="https://rezafadaie.github.io/Portfolio/images/Screenshot%202023-11-04%20203956.png"/><figcaption>
+            <h4>Entity relation schema for apartment blocks</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="https://rezafadaie.github.io/Portfolio/images/Screenshot%202023-11-04%20214551.png"/><figcaption>
+            <h4>Logical schema for apartment blocks</h4>
+        </figcaption>
+</figure>
+
+<ol start="3">
+<li>SQL Query</li>
+</ol>
+<p>The first query retrieves information about tenants who haven&rsquo;t paid their expenses, including their SSNs, names, surnames, apartment IDs, due dates, expense amounts, and types. It filters these tenants based on lease dates and unpaid expenses.</p>
+<ul>
+<li>SELECT Tenant.SSN,Tenant.Name,Tenant.Surname,Expenses.Due_Date,
+Expenses.amount, Tenant.ID_Apartment, Expenses.Type_of_expense
+FROM Tenant JOIN Expenses
+ON Tenant.ID_Apartment=Expenses.ID_Apartment
+WHERE Tenant.Lease_Start_Date &lt; Expenses.Due_Date
+AND Tenant.Lease_End_Date &gt; Expenses.Due_Date
+AND Expenses.Expense_Number NOT IN ( SELECT Expense_Number FROM
+Payment);</li>
+</ul>
+<figure><img src="https://rezafadaie.github.io/Portfolio/images/Screenshot%202023-11-05%20031923.png"/>
+</figure>
+
+<p>The second query identifies the owners of apartments associated with these overdue payments, providing their SSNs, names, surnames, and apartment IDs. It uses a subquery to find the relevant apartment IDs based on tenant lease dates and unpaid expenses.</p>
+<ul>
+<li>SELECT Owner.SSN_Owner, Owner.Name, Owner.Surname,
+Apartment.ID_Apartment
+FROM Owner JOIN Apartment
+ON Apartment.SSN_Owner=Owner.SSN_Owner
+WHERE Apartment.ID_Apartment IN
+(SELECT Tenant.ID_Apartment
+FROM Tenant JOIN Expenses
+ON Tenant.ID_Apartment=Expenses.ID_Apartment
+WHERE Tenant.Lease_Start_Date &lt; Expenses.Due_Date
+AND Tenant.Lease_End_Date &gt; Expenses.Due_Date
+AND Expenses.Expense_Number NOT IN ( SELECT Expense_Number FROM
+Payment));</li>
+</ul>
+<figure><img src="https://rezafadaie.github.io/Portfolio/images/Screenshot%202023-11-05%20032103.png"/>
+</figure>
+
+<p>In simpler terms, the first query finds tenants who haven&rsquo;t paid their bills, and the second query finds the apartment owners related to these unpaid bills.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://rezafadaie.github.io/Portfolio/" >
+    &copy;  Reza Fadaie 2023 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    
+    <a href="https://www.linkedin.com/in/reza-fadaie/" target="_blank" rel="noopener" class="LinkedIn ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" aria-label="follow on LinkedIn——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+    
+    <a href="https://github.com/rezafadaie" target="_blank" rel="noopener" class="Github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="Github link" aria-label="follow on Github——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

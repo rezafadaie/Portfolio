@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reza Fadaie Portfolio on Reza Fadaie</title>
+    <link>https://rezafadaie.github.io/Portfolio/</link>
+    <description>Recent content in Reza Fadaie Portfolio on Reza Fadaie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 13 Mar 2021 11:15:58 -0400</lastBuildDate>
+    <atom:link href="https://rezafadaie.github.io/Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictive Analysis of Term Deposit Subscription in Direct Marketing Campaigns</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-5/</link>
+      <pubDate>Sat, 13 Mar 2021 11:15:58 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-5/</guid>
+      <description>Abstract: This project revolves around the analysis and prediction of term deposit subscription in the context of direct marketing campaigns conducted by a Portuguese banking institution. The dataset used for this analysis comprises two subsets, namely &amp;ldquo;bank-full.csv&amp;rdquo; and &amp;ldquo;bank.csv,&amp;rdquo; containing information on client demographics, contact details, and historical campaign data. The primary objective is to develop a predictive model to determine whether a client will subscribe to a term deposit, indicated by the binary variable &amp;ldquo;y&amp;rdquo; (yes or no).</description>
+    </item>
+    <item>
+      <title>The cross-industry role of data science in the Italian Start-ups landscape: focus on Fintech, Fashion, Food, and Marketing</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-6/</link>
+      <pubDate>Wed, 20 Jan 2021 10:58:08 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-6/</guid>
+      <description>The goal of the Project The goal of this research project is to investigate the pivotal role of data analysis within top Italian startups across various industries, including fashion, fintech, food, and marketing, in the year 2020. This research seeks to elucidate the innovation and competitive edge that each of these startups brings to their respective sectors by addressing the following research questions:
+To discern how startups can harness and capitalize on (big) data and data analysis techniques to their advantage, thereby enhancing their operations and competitiveness.</description>
+    </item>
+    <item>
+      <title>Business intelligence and data analysis for movie theater project</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-4/</link>
+      <pubDate>Fri, 12 Jun 2020 11:14:48 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-4/</guid>
+      <description>The goal of the project The goal of this project is to establish a unique movie theater in Milan catering to international students by exclusively screening films in their original language. By analyzing the questionnaire already provided, research questions encompass exploring consumers&amp;rsquo; cinema habits, assessing attitudes towards dubbed films, investigating potential demand for an original language theater among international students, and determining strategies to specify offerings that satisfy customer preferences.</description>
+    </item>
+    <item>
+      <title>Lung cancer prediction</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-3/</link>
+      <pubDate>Thu, 11 Jun 2020 11:13:32 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-3/</guid>
+      <description>The goal of the project The project aims to use machine learning with IBM SPSS Modeler to:
+Investigate and analyze previous research studies to gain insights into the key risk factors distinguishing malignant and benign tumors.
+Acquire and preprocess a relevant dataset from Kaggle, specifically focusing on aligning it with the most significant risk factors identified in prior research.
+Employ this dataset to develop a predictive model that can effectively differentiate between malignant and benign tumors based on the identified risk factors.</description>
+    </item>
+    <item>
+      <title>Corona virus data analysis in Italy</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-2/</link>
+      <pubDate>Wed, 01 Apr 2020 11:00:59 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-2/</guid>
+      <description>Goal of the project: Utilize Power BI to design and implement an interactive and informative data visualization dashboard focused on the COVID-19 pandemic in Italy up to April 12, 2020. This project aims to visualize and analyze key COVID-19 data, including the number of COVID-19-related deaths, the number of individuals infected, and the count of new positive cases. The dashboard&amp;rsquo;s objective is to provide a clear and user-friendly platform for users to comprehend the pandemic&amp;rsquo;s progression, assess the impact on different regions, and gain insights into the trends and patterns related to the virus&amp;rsquo;s spread in Italy during the specified time frame.</description>
+    </item>
+    <item>
+      <title>Data management and warehousing for the apartment blocks management</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-1/</link>
+      <pubDate>Wed, 01 Apr 2020 10:58:08 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-1/</guid>
+      <description>Goal of the Project: The goal of this project is to design a comprehensive database system for the management of apartment blocks. The system aims to efficiently manage various aspects of apartment blocks, including apartments, owners, tenants, expenses, payments, and financial balances. The key objectives are as follows:
+Data Organization: Create a structured database that accurately represents the real-world relationships and entities in apartment block management.
+Efficient Data Management: Streamline the management of apartment details, expenses, payments, and balances to ensure operational efficiency.</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://rezafadaie.github.io/Portfolio/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/about/</guid>
+      <description>A little about me, I am a data scientist who likes to challenge himself and learn new skills. I enjoy working in a multinational and multidisciplinary team in a collaborative and positive atmosphere. I am a quick learner, organized, punctual, and committed to my deadlines, with the ability to manage my time and projects effectively. Moreover, I have excellent communication skills in English and preliminary Dutch speaking.</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://rezafadaie.github.io/Portfolio/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/contact/</guid>
+      <description>Follow me on these social media platform.
+LinkedIn: https://www.linkedin.com/in/reza-fadaie/ GitHub: https://github.com/rezafadaie For more information, please don&amp;rsquo;t hesitate to contact me using the provided email and phone number.
+Email: Re.fadaie@gmail.com Phone Number: +31638374690 </description>
+    </item>
+  </channel>
+</rss>
