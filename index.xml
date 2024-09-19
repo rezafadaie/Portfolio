@@ -6,8 +6,19 @@
     <description>Recent content in Reza Fadaie Portfolio on Reza Fadaie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 13 Mar 2021 11:15:58 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2024 10:58:08 -0400</lastBuildDate>
     <atom:link href="https://rezafadaie.github.io/Portfolio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flight Delay and Cancelation Analysis for Airlines </title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-7/</link>
+      <pubDate>Wed, 18 Sep 2024 10:58:08 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-7/</guid>
+      <description>1. The goal of the Project
+The goal of this project was to analyze and visualize trends in flight delays and cancellations across multiple airlines from 2009 to 2018. The analysis aimed to provide insights into delay rates, cancellation reasons, and the financial impact of delays, helping airlines make data-driven decisions to improve operations and minimize losses.
+2. Dashboards
+Overview Dashboard:
+This dashboard provides a high-level summary of total flights, cancellations, delays, and the cost associated with flight delays.</description>
+    </item>
     <item>
       <title>Predictive Analysis of Term Deposit Subscription in Direct Marketing Campaigns</title>
       <link>https://rezafadaie.github.io/Portfolio/post/chapter-5/</link>
