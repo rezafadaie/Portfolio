@@ -9,6 +9,14 @@
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate>
     <atom:link href="https://rezafadaie.github.io/Portfolio/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Key Drivers of Employee Turnover</title>
+      <link>https://rezafadaie.github.io/Portfolio/post/chapter-8/</link>
+      <pubDate>Wed, 18 Dec 2024 10:58:08 -0400</pubDate>
+      <guid>https://rezafadaie.github.io/Portfolio/post/chapter-8/</guid>
+      <description>1. Overview
+Employee turnover is a significant challenge for organizations, particularly in the healthcare industry, where maintaining adequate staffing is crucial to patient care. This project aimed to identify the key factors influencing turnover, such as wage disparities, demographics, and department-specific trends, to provide actionable insights for improving employee retention. By analyzing exit data, I created interactive dashboards that highlight patterns in employee exits, wage gaps, and other variables to guide retention strategies.</description>
+    </item>
+    <item>
       <title>Flight Delay and Cancelation Analysis for Airlines </title>
       <link>https://rezafadaie.github.io/Portfolio/post/chapter-7/</link>
       <pubDate>Wed, 18 Sep 2024 10:58:08 -0400</pubDate>
